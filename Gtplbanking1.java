@@ -58,7 +58,6 @@ public class Gtplbanking1 {
 		js1.executeScript("window.scrollBy(0,-300)"); 
 		
 		// New Account Module
-
 		WebElement NewAcc = driver.findElement(By.cssSelector("body > div:nth-child(3) > div > ul > li:nth-child(5) > a"));
 		NewAcc.click();
 
@@ -81,7 +80,6 @@ public class Gtplbanking1 {
 		Thread.sleep(1000);
 		
 		//Edit Customer  Module
-
 		WebElement EdtCust = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[3]/a"));
 		EdtCust.click();
 
@@ -93,7 +91,6 @@ public class Gtplbanking1 {
 		Thread.sleep(1000);
 
 		//Edit Account Module
-
 		WebElement EdtAcc = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[6]/a"));
 		EdtAcc.click();
 
@@ -104,7 +101,6 @@ public class Gtplbanking1 {
 		driver.navigate().back();
 		
 		//Delete Customer
-
 		WebElement Deltid = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[4]/a"));
 		Deltid.click();
 
@@ -115,7 +111,6 @@ public class Gtplbanking1 {
 		driver.navigate().back();
 
 		//Delete Account
-
 		WebElement DelAcc = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[7]/a"));
 		DelAcc.click();
 
@@ -126,7 +121,6 @@ public class Gtplbanking1 {
 		driver.navigate().back();
 
 		//Mine Statement
-
 		WebElement MiniAcc = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[8]/a"));
 		MiniAcc.click();
 
@@ -137,7 +131,6 @@ public class Gtplbanking1 {
 		driver.navigate().back();
 
 		//Customized Statement
-
 		WebElement  CustStmt = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[9]/a"));
 		CustStmt.click();	
 
@@ -156,7 +149,6 @@ public class Gtplbanking1 {
 		driver.navigate().back();
 		
 		//Logout
-
 		driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[10]/a")).click();
 	}
 }
