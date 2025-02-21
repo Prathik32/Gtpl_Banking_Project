@@ -19,18 +19,12 @@ public class Gtplbanking1 {
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://demo.guru99.com/V1/html/deleteAccountInput.php#google_vignette");
 		driver.manage().window().maximize();
-
-
+		
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-
 
 		//MANAGER MODULE
 		WebElement Mgr = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[1]/a"));
 		Mgr.click();
-
-
-
-
 
 		//NEW CUSTOMER MODULE
 		WebElement newcust = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[2]/a"));
@@ -62,11 +56,7 @@ public class Gtplbanking1 {
 
 		JavascriptExecutor js1 = (JavascriptExecutor) driver;
 		js1.executeScript("window.scrollBy(0,-300)"); 
-
-
-
-
-
+		
 		// New Account Module
 
 		WebElement NewAcc = driver.findElement(By.cssSelector("body > div:nth-child(3) > div > ul > li:nth-child(5) > a"));
@@ -89,11 +79,7 @@ public class Gtplbanking1 {
 		System.out.println(Text);
 		driver.navigate().back();
 		Thread.sleep(1000);
-
-
-
-
-
+		
 		//Edit Customer  Module
 
 		WebElement EdtCust = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[3]/a"));
@@ -106,10 +92,6 @@ public class Gtplbanking1 {
 		driver.navigate().back();
 		Thread.sleep(1000);
 
-
-
-
-
 		//Edit Account Module
 
 		WebElement EdtAcc = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[6]/a"));
@@ -120,11 +102,7 @@ public class Gtplbanking1 {
 		driver.findElement(By.xpath("//input[@name='AccSubmit']")).click();
 		Thread.sleep(1000);
 		driver.navigate().back();
-
-
-
-
-
+		
 		//Delete Customer
 
 		WebElement Deltid = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[4]/a"));
@@ -135,10 +113,6 @@ public class Gtplbanking1 {
 		driver.findElement(By.xpath("//input[@style='margin-left:5px;']")).click();
 		Thread.sleep(1000);
 		driver.navigate().back();
-
-
-
-
 
 		//Delete Account
 
@@ -151,10 +125,6 @@ public class Gtplbanking1 {
 		Thread.sleep(1000);
 		driver.navigate().back();
 
-
-
-
-
 		//Mine Statement
 
 		WebElement MiniAcc = driver.findElement(By.xpath("/html/body/div[3]/div/ul/li[8]/a"));
@@ -165,10 +135,6 @@ public class Gtplbanking1 {
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		Thread.sleep(1000);
 		driver.navigate().back();
-
-
-
-
 
 		//Customized Statement
 
@@ -188,10 +154,6 @@ public class Gtplbanking1 {
 		driver.findElement(By.xpath("//input[@name='AccSubmit']")).click();
 		Thread.sleep(1000);
 		driver.navigate().back();
-
-
-		
-		
 		
 		//Logout
 
